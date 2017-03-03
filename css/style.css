@@ -13,6 +13,7 @@ h1 {
     font-size: 48px !important;
     line-height: 100%;
     color: #FFFFFF;
+    margin: 0 0 40px;
 }
 
 p {
@@ -140,16 +141,22 @@ p {
 /*Slide-1 styles end*/
 
 /*Slide-2 styles begin*/
-.slide-2 {
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5,
+.slide-6 {
     padding: 80px 0;
     background: #ffffff;
     border: solid rgba(0, 0, 0, .2);
     border-width: 0 0 1px;
     margin: 0 40px;
 }
-    .slide-2 h1 {
+    .slide-2 h1,
+    .slide-3 h1,
+    .slide-4 h1,
+    .slide-5 h1 {
         color: #2353CA;
-        margin: 0 0 40px;
     }
     .slide-2 p {
         max-width: 700px;
@@ -159,293 +166,285 @@ p {
 /*Slide-2 styles end*/
 
 /*Slide-3 styles begin*/
-.slide-3 {
-    width: 100%;
-    padding-top: 100px;
+.slide-3,
+.slide-4,
+.slide-5 {
+    text-align: left;
 }
-    .slide-3 .benefits-container {
-        padding-right: 10px;
-    }
-        .slide-3 .arnold-benefits {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .slide-3 .arnold-example {
-            padding-left: 30px;
-        }
-/*Slide-3 styles end*/
 
-/*Slide-4 styles begin*/
-.slide-4 {
-    width: 100%;
-    text-align: center;
-    background-color: #FCFCFC;
-    padding-bottom: 100px;
-    border-bottom: 1px solid #EFEFEF;
+.img-container {
+    padding: 30px 0 30px 30px;
 }
-    .slide-4 .top {
-        background-color: #38EC83;
-        padding: 80px 0 90px;
+    .img-container > img {
+        /*margin: auto;*/
+        max-width: 100%;
     }
-        .slide-4 .top h1 {
-            color: #FFFFFF !important;
-        }
-    .slide-4 .middle {
-        padding-top: 80px;
-        margin-bottom: 50px;
-        border-top: 1px solid #EFEFEF;
-    }
-        .slide-4 .middle p {
-            margin: 0;
-        }
 
-        .slide-4 .bottom .writing {
-            padding: 0 30px;
-        }
-            .slide-4 .bottom .writing > img {
-                max-width: 100%;
-            }
+.consultation {
+    vertical-align: middle;
+    padding-left: 40px;
+}
+    .consultation h1,
+    .consultation p{
+        max-width: 80%;
+        display: block;
+        margin: 0 auto 40px;
+    }
+
+/*Slide-4 styles*/
+.slide-4 .consultation {
+    padding-left: 0;
+}
+    .slide-4 .consultation h1,
+    .slide-4 .consultation p {
+        margin: 0 30px 40px;
+    }
+.slide-4 .img-container {
+    padding: 30px 30px 30px 0;
+}
 /*Slide-4 styles end*/
 
-/*Slide-5 styles begin*/
-.slide-5 {
+.slide-6 {
+    margin: 0;
+    background: url("../images/bg.png") center;
+    background-size: cover;
+    display: table;
+    float: left;
     width: 100%;
-    text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
-    .slide-5 .login-page {
-        padding: 0;
+    .slide-6 h1 {
+        color: #ffffff;
+        margin-top: 0;
     }
-    .slide-5 .form {
-        padding-top: 80px;
-        padding-bottom: 100px;
-    }
-/*Slide-5 styles end*/
-
-
-@media (max-width: 1199px) {
-    h1 {
-        font-size: 42px !important;
-    }
-    p {
-        font-size: 19px !important;
-    }
-    .form input {
-        font-size: 19px;
-        padding: 12px 16px;
-    }
-    .inline-emoji {
-        width: 32px;
-    }
-
-    .arnold-benefits .benefits-list {
-        padding-top: 20px;
-    }
-        .arnold-benefits .benefits-list > li {
-            font-size: 19px;
-        }
-}
-
-@media (max-width: 1083px) {
-    .arnold-benefits .benefits-list {
-        padding-top: 10px;
-    }
-        .arnold-benefits .benefits-list > li:last-child {
-            margin-bottom: 0;
-        }
-}
-
-@media (max-width: 991px) {
-    .slide-4 .bottom .writing {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 767px) {
-    body {
-        text-align: center;
-    }
-    .login-page {
-        padding-top: 0;
-        margin-top: -15px;
-    }
-    .inline-emoji {
-        display: none;
-    }
-    .top-heading {
-        /*text-align: center;*/
-    }
-    .table-display {
-        display: block;
-    }
-        .table-display .table-cell {
-            display: block;
-        }
-    .arnold-benefits {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-        .arnold-benefits .benefits-list {
-            text-align: left;
-            margin: 20px auto 30px;
-        }
-            .arnold-benefits .benefits-list > li .inline-emoji {
-                display: inline-block;
-            }
-
-    .next-line {
-        display: block;
-    }
-
-    .slide-2,
-    .slide-3 {
-        padding-top: 60px;
-    }
-
-    .slide-2 .arnold-benefits,
-    .slide-3 .arnold-benefits {
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-
-    .slide-2 .arnold-example,
-    .slide-3 .arnold-example {
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-
-    .slide-4 {
-        padding-bottom: 60px;
-    }
-
-    .slide-4 .top {
-        padding-top: 50px;
-        padding-bottom: 60px;
-    }
-
-    .slide-4 .middle {
-        padding-top: 50px;
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-
-    .slide-4 .bottom .writing {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .slide-5 .form {
-        padding-top: 40px;
-        padding-bottom: 60px;
-    }
-}
-
-@media (max-width: 666px) {
-    .login-page {
-        width: 100%;
-    }
-    .slide-4 .bottom .writing {
-        padding: 0 10px;
-    }
-    .slide-5 .login-page {
-        width: 100%;
-    }
-
-    .form input {
-        width: 69%;
-        height: 100%;
-    }
-    .form button {
-        width: 30%;
-        font-size: 19px;
-        height: 52px;
-        padding-top: 14px;
-    }
-    .form .success-message {
-        width: 99%;
-        height: 52px;
-    }
-        .form .success-message p {
-            margin-top: 14px;
-        }
-    .form .error-message {
-        margin-top: 10px;
-        width: 99%;
-        height: 44px;
-        padding-right: 1%;
-        padding-left: 1%;
-    }
-        .form .error-message p {
-            padding-top: 10px;
-        }
-    .form .error-message > img {
-        margin: 12px 0 0 0;
-    }
-    .form .error-message > p {
+    .slide-6 h1:last-child {
         margin-bottom: 0;
-        padding-bottom: 12px;
     }
-}
 
-@media (max-width: 566px) {
-    .sub-heading:before {
-        content: '\a';
-        white-space: pre;
-    }
-    .inputBlock {
-        height: 54px;
-    }
-    .slide-1 {
-        width: 100%;
-    }
-    .slide-1 .login-page {
-        width: 100%;
-        padding-top: 0;
-        margin-top: -30px;
-    }
-    .form h1 {
-        font-size: 40px;
-    }
-    .form p {
-        font-size: 16px;
-        margin-bottom: 60px;
-    }
-    .form input {
-        width: 69%;
-        height: 100%;
-        padding: 12px 10px;
-        margin: 0;
-        vertical-align: middle;
-        font-size: 16px;
-    }
-    .form button {
-        width: 30%;
-        font-size: 16px;
-        height: 100%;
-        padding: 0;
-        vertical-align: middle;
-    }
-    .form .success-message {
-        width: 99%;
-        height: auto;
-    }
-    .form .error-message {
-        margin-top: 10px;
-        width: 97%;
-        height: auto;
-        padding-right: 1%;
-        padding-left: 1%;
-    }
-        .form .error-message > img {
-            margin: 12px 0 0 0;
-        }
-       .form .error-message > p {
-           margin-bottom: 0;
-           padding-bottom: 12px;
-       }
-}
+/*@media (max-width: 1199px) {*/
+    /*h1 {*/
+        /*font-size: 42px !important;*/
+    /*}*/
+    /*p {*/
+        /*font-size: 19px !important;*/
+    /*}*/
+    /*.form input {*/
+        /*font-size: 19px;*/
+        /*padding: 12px 16px;*/
+    /*}*/
+    /*.inline-emoji {*/
+        /*width: 32px;*/
+    /*}*/
 
-@media (max-width: 460px) {
-    .form {
-        padding: 20px;
-    }
-}
+    /*.arnold-benefits .benefits-list {*/
+        /*padding-top: 20px;*/
+    /*}*/
+        /*.arnold-benefits .benefits-list > li {*/
+            /*font-size: 19px;*/
+        /*}*/
+/*}*/
+
+/*@media (max-width: 1083px) {*/
+    /*.arnold-benefits .benefits-list {*/
+        /*padding-top: 10px;*/
+    /*}*/
+        /*.arnold-benefits .benefits-list > li:last-child {*/
+            /*margin-bottom: 0;*/
+        /*}*/
+/*}*/
+
+/*@media (max-width: 991px) {*/
+    /*.slide-4 .bottom .writing {*/
+        /*padding: 0 20px;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 767px) {*/
+    /*body {*/
+        /*text-align: center;*/
+    /*}*/
+    /*.login-page {*/
+        /*padding-top: 0;*/
+        /*margin-top: -15px;*/
+    /*}*/
+    /*.inline-emoji {*/
+        /*display: none;*/
+    /*}*/
+    /*.top-heading {*/
+        /*!*text-align: center;*!*/
+    /*}*/
+    /*.table-display {*/
+        /*display: block;*/
+    /*}*/
+        /*.table-display .table-cell {*/
+            /*display: block;*/
+        /*}*/
+    /*.arnold-benefits {*/
+        /*padding-left: 30px;*/
+        /*padding-right: 30px;*/
+    /*}*/
+        /*.arnold-benefits .benefits-list {*/
+            /*text-align: left;*/
+            /*margin: 20px auto 30px;*/
+        /*}*/
+            /*.arnold-benefits .benefits-list > li .inline-emoji {*/
+                /*display: inline-block;*/
+            /*}*/
+
+    /*.next-line {*/
+        /*display: block;*/
+    /*}*/
+
+    /*.slide-2,*/
+    /*.slide-3 {*/
+        /*padding-top: 60px;*/
+    /*}*/
+
+    /*.slide-2 .arnold-benefits,*/
+    /*.slide-3 .arnold-benefits {*/
+        /*padding-left: 36px;*/
+        /*padding-right: 36px;*/
+    /*}*/
+
+    /*.slide-2 .arnold-example,*/
+    /*.slide-3 .arnold-example {*/
+        /*padding-left: 36px;*/
+        /*padding-right: 36px;*/
+    /*}*/
+
+    /*.slide-4 {*/
+        /*padding-bottom: 60px;*/
+    /*}*/
+
+    /*.slide-4 .top {*/
+        /*padding-top: 50px;*/
+        /*padding-bottom: 60px;*/
+    /*}*/
+
+    /*.slide-4 .middle {*/
+        /*padding-top: 50px;*/
+        /*padding-left: 36px;*/
+        /*padding-right: 36px;*/
+    /*}*/
+
+    /*.slide-4 .bottom .writing {*/
+        /*margin-top: 15px;*/
+        /*margin-bottom: 15px;*/
+    /*}*/
+
+    /*.slide-5 .form {*/
+        /*padding-top: 40px;*/
+        /*padding-bottom: 60px;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 666px) {*/
+    /*.login-page {*/
+        /*width: 100%;*/
+    /*}*/
+    /*.slide-4 .bottom .writing {*/
+        /*padding: 0 10px;*/
+    /*}*/
+    /*.slide-5 .login-page {*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*.form input {*/
+        /*width: 69%;*/
+        /*height: 100%;*/
+    /*}*/
+    /*.form button {*/
+        /*width: 30%;*/
+        /*font-size: 19px;*/
+        /*height: 52px;*/
+        /*padding-top: 14px;*/
+    /*}*/
+    /*.form .success-message {*/
+        /*width: 99%;*/
+        /*height: 52px;*/
+    /*}*/
+        /*.form .success-message p {*/
+            /*margin-top: 14px;*/
+        /*}*/
+    /*.form .error-message {*/
+        /*margin-top: 10px;*/
+        /*width: 99%;*/
+        /*height: 44px;*/
+        /*padding-right: 1%;*/
+        /*padding-left: 1%;*/
+    /*}*/
+        /*.form .error-message p {*/
+            /*padding-top: 10px;*/
+        /*}*/
+    /*.form .error-message > img {*/
+        /*margin: 12px 0 0 0;*/
+    /*}*/
+    /*.form .error-message > p {*/
+        /*margin-bottom: 0;*/
+        /*padding-bottom: 12px;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 566px) {*/
+    /*.sub-heading:before {*/
+        /*content: '\a';*/
+        /*white-space: pre;*/
+    /*}*/
+    /*.inputBlock {*/
+        /*height: 54px;*/
+    /*}*/
+    /*.slide-1 {*/
+        /*width: 100%;*/
+    /*}*/
+    /*.slide-1 .login-page {*/
+        /*width: 100%;*/
+        /*padding-top: 0;*/
+        /*margin-top: -30px;*/
+    /*}*/
+    /*.form h1 {*/
+        /*font-size: 40px;*/
+    /*}*/
+    /*.form p {*/
+        /*font-size: 16px;*/
+        /*margin-bottom: 60px;*/
+    /*}*/
+    /*.form input {*/
+        /*width: 69%;*/
+        /*height: 100%;*/
+        /*padding: 12px 10px;*/
+        /*margin: 0;*/
+        /*vertical-align: middle;*/
+        /*font-size: 16px;*/
+    /*}*/
+    /*.form button {*/
+        /*width: 30%;*/
+        /*font-size: 16px;*/
+        /*height: 100%;*/
+        /*padding: 0;*/
+        /*vertical-align: middle;*/
+    /*}*/
+    /*.form .success-message {*/
+        /*width: 99%;*/
+        /*height: auto;*/
+    /*}*/
+    /*.form .error-message {*/
+        /*margin-top: 10px;*/
+        /*width: 97%;*/
+        /*height: auto;*/
+        /*padding-right: 1%;*/
+        /*padding-left: 1%;*/
+    /*}*/
+        /*.form .error-message > img {*/
+            /*margin: 12px 0 0 0;*/
+        /*}*/
+       /*.form .error-message > p {*/
+           /*margin-bottom: 0;*/
+           /*padding-bottom: 12px;*/
+       /*}*/
+/*}*/
+
+/*@media (max-width: 460px) {*/
+    /*.form {*/
+        /*padding: 20px;*/
+    /*}*/
+/*}*/

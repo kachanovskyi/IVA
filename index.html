@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Exeo Visa Bot</title>
+  <title>IVA</title>
 
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -11,11 +11,11 @@
 </head>
 <body>
 
-<div class="slide-1" id="home">
+<div class="slide-1">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#saviatorNav">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navIVA">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -24,7 +24,7 @@
           <img src="images/iva-logo.svg"/>
         </a>
       </div>
-      <div class="collapse navbar-collapse" id="saviatorNav">
+      <div class="collapse navbar-collapse" id="navIVA">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><img src="images/fb-icon.svg"/></a></li>
           <li><a href="#"><img src="images/tw-icon.png"/></a></li>
@@ -36,7 +36,7 @@
     <div class="top col-md-12">
       <div class="inner">
         <h1>Meet IVA, your Immigration Virtual Assistant</h1>
-        <a href="#skills" class="learn-more-btn messenger page-scroll">
+        <a href="https://www.messenger.com/t/255264931582804" class="learn-more-btn messenger page-scroll" target="_blank">
           <img src="images/messenger-icon.svg"/> Message me
         </a>
       </div>
@@ -50,54 +50,62 @@
     <p>
       Fusce tincidunt ultricies mauris, et ornare elit. Nunc quis pretium felis. Donec nunc augue, dictum ac gravida vel, efficitur quis elit. Duis commodo, arcu non scelerisque congue, risus erat mollis justo, eu efficitur enim arcu quis eros.
     </p>
-    <a href="#" class="learn-more-btn page-scroll"> Learn more</a>
+    <a href="#more" class="learn-more-btn page-scroll"> Learn more</a>
   </div>
 </div>
 
-  <div class="slide-3">
-    <div class="row table-display">
-      
+<div class="slide-3" id="more">
+  <div class="row table-display">
+    <div class="img-container table-cell col-xs-offset-1 col-xs-10 col-sm-4 col-md-offset-1">
+      <img src="images/consultation-img.png"/>
+    </div>
+    <div class="consultation table-cell col-xs-offset-1 col-xs-10 col-sm-6">
+      <h1>Have a consultation via chat interface</h1>
+      <p>
+        Fusce tincidunt ultricies mauris, et ornare elit. Nunc quis pretium felis. Donec nunc augue, dictum ac gravida vel, efficitur quis elit. Duis commodo, arcu non scelerisque congue, risus erat mollis justo, eu efficitur enim arcu quis eros.
+      </p>
     </div>
   </div>
+</div>
 
-  <div class="slide-4" id="press">
-    <div class="top">
-      <h1>No pain. <span class="next-line">No gain.</span> <img class="inline-emoji" src="images/cup_emoji.png"></h1>
+<div class="slide-4">
+  <div class="row table-display">
+    <div class="img-container table-cell col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4 col-sm-push-6 col-md-offset-1">
+      <img src="images/calculate-img.png"/>
     </div>
-    <div class="middle">
-      <h1 class="gradient">They are talking about me <img class="inline-emoji" src="images/thought_emoji.png"></h1>
-      <p>Ready for an AI fitness trainer powered by rock hard pecs?</p>
-      <p>Pack your gym bag, you’ve got a big workout ahead!</p>
-    </div>
-    <div class="bottom">
-      <div class="row">
-        <div class="col-xs-offset-2 col-xs-4 col-sm-offset-2 col-sm-2 col-md-offset-2 writing"><img src="images/verge.svg"></div>
-        <div class="col-xs-4 col-sm-2 writing"><img src="images/lifehacker.png"></div>
-        <div class="col-xs-offset-2 col-xs-4 col-sm-offset-0 col-sm-2 writing"><img src="images/tc.svg"></div>
-        <div class="col-xs-4 col-sm-2 writing"><img src="images/wired.svg"></div>
-      </div>
+    <div class="consultation table-cell col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-sm-pull-4">
+      <h1>Calculate points for the Express Entry program</h1>
+      <p>
+        Fusce tincidunt ultricies mauris, et ornare elit. Nunc quis pretium felis. Donec nunc augue, dictum ac gravida vel, efficitur quis elit. Duis commodo, arcu non scelerisque congue, risus erat mollis justo, eu efficitur enim arcu quis eros.
+      </p>
     </div>
   </div>
+</div>
 
-  <div class="slide-5" id="contact">
-    <div class="login-page">
-      <div class="form">
-        <!--<form name="contactBottomForm" id="startBottomForm" method="POST" action="http://requestb.in/1m0w1s51" target="mock_frame">-->
-        <form name="contactForm" id="startBottomForm" method="POST" action="https://fitness.botscrew.com/add" target="mock_frame">
-          <h1 class="gradient">Call to action is here <img class="inline-emoji" src="images/fire_emoji.png"></h1>
-          <p>Ready for an AI fitness trainer powered by rock hard pecs? Pack your gym bag, you’ve got a big workout ahead!</p>
-          <div class="inputBlock">
-            <input id="phoneBottom" name="phoneNumber" type="text" placeholder="Enter your phone number"/>
-            <button type="button" id="startBottom">Start</button>
-          </div>
-          <div class="error-message">
-            <img src="images/warning.svg">
-            <p>Oops! Please enter correct phone number</p>
-          </div>
-        </form>
-      </div>
+<div class="slide-5">
+  <div class="row table-display">
+    <div class="img-container table-cell col-xs-offset-1 col-xs-10 col-sm-4 col-md-offset-1">
+      <img src="images/immigrate-illustration.png"/>
+    </div>
+    <div class="consultation table-cell col-xs-offset-1 col-xs-10 col-sm-6">
+      <h1>... and immigrate to Canada</h1>
+      <p>
+        Fusce tincidunt ultricies mauris, et ornare elit. Nunc quis pretium felis. Donec nunc augue, dictum ac gravida vel, efficitur quis elit. Duis commodo, arcu non scelerisque congue, risus erat mollis justo, eu efficitur enim arcu quis eros.
+      </p>
     </div>
   </div>
+</div>
+
+<div class="slide-6">
+  <div class="top row">
+    <h1>Want to immigrate to Canada?</h1>
+    <h1>Let’s have a chat.</h1>
+    <a href="https://www.messenger.com/t/255264931582804" class="learn-more-btn messenger page-scroll" target="_blank">
+      <img src="images/messenger-icon.svg"/> Message me
+    </a>
+  </div>
+</div>
+
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
