@@ -21,14 +21,6 @@ p {
     color: rgba(0,0, 0, .5);
 }
 
-.table-display {
-    display: table !important;
-}
-.table-display .table-cell {
-    display: table-cell !important;
-    float: none;
-}
-
 .learn-more-btn {
     display: inline-block;
     padding: 15px 32px;
@@ -145,7 +137,8 @@ p {
 .slide-3,
 .slide-4,
 .slide-5,
-.slide-6 {
+.slide-6,
+.slide-7 {
     padding: 80px 0;
     background: #ffffff;
     border: solid rgba(0, 0, 0, .2);
@@ -155,10 +148,12 @@ p {
     .slide-2 h1,
     .slide-3 h1,
     .slide-4 h1,
-    .slide-5 h1 {
+    .slide-5 h1,
+    .slide-7 h1 {
         color: #2353CA;
     }
-    .slide-2 p {
+    .slide-2 p,
+    .slide-7 p {
         max-width: 700px;
         display: block;
         margin: auto;
@@ -173,11 +168,12 @@ p {
 }
 
 .img-container {
-    padding: 30px 0 30px 30px;
+    padding: 0 30px 0;
 }
     .img-container > img {
         /*margin: auto;*/
         max-width: 100%;
+        box-shadow: 0 50px 100px rgba(0, 0, 0, 0.05);
     }
 
 .consultation {
@@ -190,19 +186,6 @@ p {
         display: block;
         margin: 0 auto 40px;
     }
-
-/*Slide-4 styles*/
-.slide-4 .consultation {
-    padding-left: 0;
-}
-    .slide-4 .consultation h1,
-    .slide-4 .consultation p {
-        margin: 0 30px 40px;
-    }
-.slide-4 .img-container {
-    padding: 30px 30px 30px 0;
-}
-/*Slide-4 styles end*/
 
 .slide-6 {
     margin: 0;
@@ -220,6 +203,163 @@ p {
     .slide-6 h1:last-child {
         margin-bottom: 0;
     }
+
+
+.slide-7 {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+}
+    .slide-7 .magazines {
+        margin: 80px auto;
+        display: inline-block;
+    }
+        .slide-7 .magazines > img {
+            margin: 0 30px;
+        }
+    .slide-7 .clients {
+        margin: 0;
+    }
+        .slide-7 .clients > div {
+            padding: 0;
+        }
+        .slide-7 .clients img {
+            max-width: 100%;
+        }
+
+.footer {
+    text-align: center;
+    height: 80px;
+}
+    .footer p {
+        margin-top: 31px;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 100%;
+        color: rgba(0, 0, 0, 0.5);
+        opacity: 1.00;
+    }
+
+
+@media (max-width: 1067px) {
+    .slide-7 .magazines {
+        margin-top: 30px;
+    }
+        .slide-7 .magazines > img {
+            margin-top: 30px;
+        }
+}
+
+@media (max-width: 991px) {
+    .navbar.navbar-default .container-fluid {
+        padding: 0 6%;
+    }
+    .slide-2, .slide-3, .slide-4, .slide-5, .slide-6, .slide-7 {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .table-display {
+        display: table !important;
+    }
+    .table-display .table-cell {
+        display: table-cell !important;
+        float: none;
+        vertical-align: middle;
+    }
+
+    /*Slide-4 styles*/
+    .slide-4 .consultation {
+        padding-left: 0;
+    }
+        .slide-4 .consultation h1,
+        .slide-4 .consultation p {
+            margin: 0 30px 40px;
+        }
+    /*Slide-4 styles end*/
+}
+@media (max-width: 767px) {
+    body {
+        text-align: left;
+    }
+    h1 {
+        font-size: 36px !important;
+    }
+    .navbar.navbar-default {
+        margin: 0 12% 0;
+    }
+    .navbar-right {
+        float: right!important;
+        margin-right: -15px;
+    }
+    .navbar-nav {
+        margin: 0 !important;
+    }
+        .navbar-nav>li {
+            float: left;
+        }
+
+    .navbar-header {
+        float: left;
+    }
+    .container-fluid>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .consultation h1, .consultation p {
+        margin-bottom: 30px;
+    }
+
+    .img-container {
+        padding: 30px;
+    }
+
+    .img-container > img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+    }
+
+    .slide-1,
+    .slide-6,
+    .slide-7 .magazines,
+    .footer {
+        text-align: center;
+    }
+
+    .slide-2 .col-xs-12,
+    .slide-7 .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slide-2 .top,
+    .slide-7 .top {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 80%;
+        margin: auto;
+    }
+
+@media (max-width: 575px) {
+    .navbar.navbar-default {
+        margin: 0 2% 0;
+    }
+
+    .navbar.navbar-default .container-fluid {
+        padding: 0;
+    }
+
+    .slide-1 .top .inner {
+        padding: 80px 0 15px;
+    }
+    .slide-2, .slide-3, .slide-4, .slide-5, .slide-6, .slide-7 {
+        padding-top: 40px;
+    }
+}
 
 /*@media (max-width: 1199px) {*/
     /*h1 {*/
