@@ -132,6 +132,7 @@
                 // .css('width', launcherCont.width)
                 // .css('height', chatHeight)
                 .css('background-size', '100%')
+                .append( $('<span class="close-btn">') )
                 .append(
                     $('<p>')
                         .text(', I am agent ')

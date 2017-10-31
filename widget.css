@@ -123,17 +123,18 @@
     top: 0;
 }
 
-#chat-window .chat-top .close-btn {
-    display: inline-block;
-    float: right;
+#chat-window .close-btn {
+    position: absolute;
+    right: 9px;
+    top: 9px
 }
 
-#chat-window .chat-top .close-btn:before {
+#chat-window .close-btn:before {
     content: "\00d7";
-    float: right;
-    color: rgba(256, 256, 256, .75);
+    color: rgba(0, 0, 0, .75);
     cursor: pointer;
     font-size: 20px;
+    line-height: 100%;
 }
 
 #chat-window .chat-top .anychat-label {
