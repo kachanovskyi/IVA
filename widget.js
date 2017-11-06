@@ -451,6 +451,13 @@
         }
 
         window.initializeShopchat = init;
+
+        setTimeout(function () {
+            if($('#chat-window').length === 0) {
+                launcher.trigger("click");
+            }
+        }, 60000);
+
         return true;
     }
 })();
