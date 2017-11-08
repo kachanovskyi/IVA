@@ -18,7 +18,7 @@
     icons.rel = 'stylesheet';
     icons.href = 'https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css';
     head.appendChild(icons);
-    
+
     setTimeout(function () {
         (window.jQuery && init()) || loadScript("https://code.jquery.com/jquery-1.12.4.min.js", init);           //instead of init func should be isValidTime, so that widget would work only on certain hours
     }, 1000);
@@ -46,10 +46,6 @@
 
     function init() {
         var $ = window.jQuery;
-
-        var chatId = sessionStorage.getItem("toyotaCRchatID");
-        // settings = {},
-        // script = $('#anychat-script');
 
         var anchor = $('<div>')
             .attr('id', 'widget-container')
@@ -114,6 +110,12 @@
                 )
                 .append(
                     $('<img>').attr('src', './reva.png')
+                )
+                .append(
+                    $('<a class="reva-link">')
+                        .attr('href', 'https://vimeo.com/238514574')
+                        .attr('target', '_blank')
+                        .text('Watch video')
                 )
                 .append(
                     $('<p>').text('Click the button below to chat with me.')
